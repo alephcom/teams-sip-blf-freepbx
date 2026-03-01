@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<rawname>teamsblf</rawname>
+	<repo>standard</repo>
+	<name>Teams BLF Sync</name>
+	<version>0.0.1</version>
+	<publisher>Community</publisher>
+	<license>MIT</license>
+	<licenselink>https://opensource.org/licenses/MIT</licenselink>
+	<category>Applications</category>
+	<description>
+		Configure the teams-sip-blf sync service: map extensions to Microsoft 365 UPN for Teams presence, manage .env and extensions.json in /var/lib/asterisk/teams-sip-blf/, and optionally download the sync binary.
+	</description>
+	<more-info>https://github.com/alephcom/teams-sip-blf</more-info>
+	<changelog>
+		*0.0.1* Initial release: extension→email list, prepopulate from FreePBX, .env and JSON write, install detection, binary download.
+	</changelog>
+	<menuitems>
+		<teamsblf display="config" access="teamsblf" category="Applications">Teams BLF Sync</teamsblf>
+	</menuitems>
+	<database>
+		<table name="teamsblf_extensions">
+			<field name="id" type="integer" primarykey="true" autoincrement="true"/>
+			<field name="extension" type="string" length="20" notnull="true"/>
+			<field name="email" type="string" length="255" notnull="true"/>
+		</table>
+		<table name="teamsblf_settings">
+			<field name="k" type="string" length="64" primarykey="true"/>
+			<field name="v" type="string" length="2048" notnull="false"/>
+		</table>
+	</database>
+	<depends>
+		<module>framework ge 15.0</module>
+		<version>15.0</version>
+	</depends>
+	<supported>
+		<version>15.0</version>
+	</supported>
+	<defaultsettings/>
+</module>
