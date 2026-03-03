@@ -6,9 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-### Changed
+## [0.0.3] - FreePBX 13 support branch
 
-- **FreePBX 13.0.121+** is now the minimum supported version (framework ge 13.0.121). Module supports 13, 14, and 15. Requires PDO-based database layer (available from 13.0.121).
+### Added
+
+- **FreePBX 13 support branch**: This branch declares compatibility with FreePBX 13.0 (framework ge 13.0). Use the `support-freepbx-13` branch for FreePBX 13; use `support-freepbx-14` for FreePBX 14 and `main` for FreePBX 15.
 
 ## [0.0.1] - Initial release
 
@@ -24,4 +26,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - App directory `/var/lib/asterisk/teams-sip-blf/` created on module install; `.env` and `extensions.json` paths fixed to that directory.
 - English i18n strings in `teamsblf/i18n/en_US.php`.
 
+[0.0.3]: https://github.com/your-org/teams-sip-blf-freepbx/releases/tag/v0.0.3
 [0.0.1]: https://github.com/your-org/teams-sip-blf-freepbx/releases/tag/v0.0.1
