@@ -1,5 +1,7 @@
 # teams-sip-blf-freepbx
 
+**This module is under development and does not currently work.**
+
 FreePBX module for configuring and managing the [teams-sip-blf](https://github.com/alephcom/teams-sip-blf) sync service. Syncs Microsoft Teams presence from your PBX using SIP BLF (Busy Lamp Field).
 
 ## Features
