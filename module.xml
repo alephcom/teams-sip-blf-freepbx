@@ -30,11 +30,11 @@
 		</table>
 	</database>
 	<depends>
-		<module>framework ge 15.0</module>
-		<version>15.0</version>
+		<module>framework ge 14.0</module>
+		<version>14.0</version>
 	</depends>
 	<supported>
-		<version>15.0</version>
+		<version>14.0</version>
 	</supported>
 	<defaultsettings/>
 </module>

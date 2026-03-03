@@ -12,7 +12,7 @@ FreePBX module for configuring and managing the [teams-sip-blf](https://github.c
 
 ## Requirements
 
-- FreePBX **15.0** or later.
+- **This branch** targets FreePBX **14.0**. The `main` branch targets FreePBX 15.
 - Optional: Core and Voicemail modules (for reading extensions and voicemail email)
 
 ## Installation
